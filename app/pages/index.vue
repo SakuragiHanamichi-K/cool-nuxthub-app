@@ -25,9 +25,7 @@ console.log('runtimeConfig', runtimeConfig)
 
 <template>
   <div class="centered">
-    <h1 :style="{ color }">
-      {{ runtimeConfig.public.helloText }}
-    </h1>
+    <h1 :style="{ color }">hello world</h1>
     <NuxtLink to="/" external> refresh </NuxtLink>
   </div>
 </template>
