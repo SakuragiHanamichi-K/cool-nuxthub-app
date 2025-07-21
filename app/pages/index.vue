@@ -1,20 +1,32 @@
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
-const colors = ['#f87171', '#fb923c', '#fbbf24', '#facc15', '#a3e635', '#4ade80', '#34d399', '#2dd4bf', '#22d3ee', '#38bdf8', '#60a5fa', '#818cf8', '#a78bfa', '#c084fc', '#e879f9', '#f472b6', '#fb7185']
+const colors = [
+  '#f87171',
+  '#fb923c',
+  '#fbbf24',
+  '#facc15',
+  '#a3e635',
+  '#4ade80',
+  '#34d399',
+  '#2dd4bf',
+  '#22d3ee',
+  '#38bdf8',
+  '#60a5fa',
+  '#818cf8',
+  '#a78bfa',
+  '#c084fc',
+  '#e879f9',
+  '#f472b6',
+  '#fb7185'
+]
 const color = useState('color', () => colors[Math.floor(Math.random() * colors.length)])
+console.log('runtimeConfig', runtimeConfig)
 </script>
 
 <template>
   <div class="centered">
-    <h1 :style="{ color }">
-      {{ runtimeConfig.public.helloText }}
-    </h1>
-    <NuxtLink
-      to="/"
-      external
-    >
-      refresh
-    </NuxtLink>
+    <h1 :style="{ color }">hello world --main</h1>
+    <NuxtLink to="/" external> refresh </NuxtLink>
   </div>
 </template>
 
@@ -27,7 +39,8 @@ const color = useState('color', () => colors[Math.floor(Math.random() * colors.l
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 h1 {
   font-size: 32px;
