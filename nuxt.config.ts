@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
     public: {
-      appName: process.env.NUXT_HUB_PROJECT_NAME
+      appName: process.env.NUXT_HUB_PROJECT_NAME,
+      env: process.env.NUXT_HUB_ENV
     }
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
