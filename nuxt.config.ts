@@ -12,8 +12,7 @@ export default defineNuxtConfig({
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
     public: {
-      // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
-      helloText: 'Hello from the Edge 👋'
+      appName: process.env.NUXT_HUB_PROJECT_NAME
     }
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
