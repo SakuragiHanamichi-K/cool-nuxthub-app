@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       env: process.env.NUXT_HUB_ENV,
     },
   },
+  devServer: {
+    port: 1415,
+  },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2025-03-01',

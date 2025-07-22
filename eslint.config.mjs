@@ -8,10 +8,10 @@ export default withNuxt(
       // 代码风格
       '@stylistic/quote-props': ['error', 'as-needed'], // 属性名引号|as-needed只有在必要时才使用引号always所有对象属性都加引号never不使用引号
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      'no-debugger': 'error', // debugger 直接报错
+      // 'no-console': ['error', { allow: ['warn', 'error'] }],
       semi: ['error', 'never'], // 不使用分号
       quotes: ['error', 'single'], // 单引号
-      // 'no-console': ['error', { allow: ['warn', 'error'] }],
-      'no-debugger': 'error', // debugger 直接报错
       indent: ['error', 2], // 两空格缩进
 
       // Vue 相关

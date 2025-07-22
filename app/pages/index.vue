@@ -33,6 +33,7 @@ console.log('runtimeConfig', runtimeConfig)
 
 <style scoped>
 .centered {
+  text-align: center;
   position: absolute;
   width: 100%;
   top: 50%;
