@@ -17,7 +17,7 @@ const colors = [
   '#c084fc',
   '#e879f9',
   '#f472b6',
-  '#fb7185'
+  '#fb7185',
 ]
 const color = useState('color', () => colors[Math.floor(Math.random() * colors.length)])
 const hello = ref('Hello World!')
@@ -25,19 +25,9 @@ console.log('runtimeConfig', runtimeConfig)
 </script>
 
 <template>
-  <div
-    class="centered"
-    @click="hello = 'Hello Nuxt 3!' "
-  >
-    <h1 :style="{ color }">
-      {{ hello }} -- {{ runtimeConfig.public.env }}
-    </h1>
-    <NuxtLink
-      to="/"
-      external
-    >
-      refresh
-    </NuxtLink>
+  <div class="centered">
+    <h1 :style="{ color }">{{ hello }} -- {{ runtimeConfig.public.env }}</h1>
+    <NuxtLink to="/" external>refresh</NuxtLink>
   </div>
 </template>
 
@@ -45,13 +35,22 @@ console.log('runtimeConfig', runtimeConfig)
 .centered {
   position: absolute;
   width: 100%;
-  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
 }
 h1 {
   font-size: 32px;

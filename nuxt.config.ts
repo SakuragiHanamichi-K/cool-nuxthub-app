@@ -4,10 +4,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint'
-  ],
+  modules: ['@nuxthub/core', '@nuxt/eslint'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -16,8 +13,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: process.env.NUXT_HUB_PROJECT_NAME,
-      env: process.env.NUXT_HUB_ENV
-    }
+      env: process.env.NUXT_HUB_ENV,
+    },
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
@@ -25,14 +22,5 @@ export default defineNuxtConfig({
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {},
-
   // Development config
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-        commaDangle: 'never'
-      }
-    }
-  }
 })
