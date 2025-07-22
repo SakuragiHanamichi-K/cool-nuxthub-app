@@ -1,3 +1,6 @@
+// 手动加载多环境
+// import { config } from 'dotenv'
+// config({ path: `.env.${process.env.NODE_ENV}` })
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules

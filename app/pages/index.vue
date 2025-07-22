@@ -20,13 +20,24 @@ const colors = [
   '#fb7185'
 ]
 const color = useState('color', () => colors[Math.floor(Math.random() * colors.length)])
+const hello = ref('Hello World!')
 console.log('runtimeConfig', runtimeConfig)
 </script>
 
 <template>
-  <div class="centered">
-    <h1 :style="{ color }">HELLO WORD -- staging</h1>
-    <NuxtLink to="/" external> refresh </NuxtLink>
+  <div
+    class="centered"
+    @click="hello = 'Hello Nuxt 3!' "
+  >
+    <h1 :style="{ color }">
+      {{ hello }} -- {{ runtimeConfig.public.env }}
+    </h1>
+    <NuxtLink
+      to="/"
+      external
+    >
+      refresh
+    </NuxtLink>
   </div>
 </template>
 
