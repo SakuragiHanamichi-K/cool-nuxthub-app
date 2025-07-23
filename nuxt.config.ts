@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     public: {
       appName: process.env.NUXT_HUB_PROJECT_NAME,
       env: process.env.NUXT_HUB_ENV,
+      test: process.env.NUXT_PUBLIC_TEST,
     },
   },
   devServer: {

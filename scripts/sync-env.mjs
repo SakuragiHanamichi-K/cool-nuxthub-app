@@ -1,3 +1,7 @@
+// 暂时未使用, 但保留以备将来使用
+// 该脚本用于从 NuxtHub 同步环境变量到 .env.local 文件
+// 使用方法：在项目根目录下运行 `npm run sync-env`
+// 确保已安装 dotenv-esm 和 ofetch 包
 import { writeFileSync } from 'fs'
 import { config } from 'dotenv-esm'
 import { $fetch } from 'ofetch'
