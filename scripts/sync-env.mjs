@@ -6,7 +6,6 @@ import { writeFileSync } from 'fs'
 import { config } from 'dotenv-esm'
 import { $fetch } from 'ofetch'
 config()
-
 const NUXT_HUB_PROJECT_KEY = process.env.NUXT_HUB_PROJECT_KEY
 const NUXT_HUB_API_TOKEN = process.env.NUXT_HUB_API_TOKEN
 

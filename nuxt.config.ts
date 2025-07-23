@@ -1,5 +1,8 @@
 // 手动加载多环境
-// import { config } from 'dotenv'
+import { config as loadDotEnv } from 'dotenv-esm'
+import { resolve } from 'path'
+
+loadDotEnv({ path: resolve(__dirname, '.env.local') })
 // config({ path: `.env.${process.env.NODE_ENV}` })
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -14,7 +17,6 @@ export default defineNuxtConfig({
     public: {
       appName: process.env.NUXT_HUB_PROJECT_NAME,
       env: process.env.NUXT_HUB_ENV,
-      test: process.env.NUXT_PUBLIC_TEST,
     },
   },
   devServer: {

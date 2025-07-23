@@ -29,6 +29,7 @@
   "vue.server.includeLanguages": ["vue", "html", "md"],
   // 调试日志关闭
   "vue.trace.server": "off",
+  "cSpell.words": ["nuxt", "nuxthub", "ofetch", "runtimeConfig", "env", "dotenv", "NUXT_PUBLIC_API"],
   // 🧹 Prettier 相关
   "prettier.configPath": "./.prettierrc.json",
   // 保存时自动修复
